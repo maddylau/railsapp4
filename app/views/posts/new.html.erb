@@ -1,0 +1,11 @@
+<%=form_for Post.new do |f| %>
+  <%=f.label :headline %>
+  <%=f.text_field :headline %>
+  <br>
+  <br>
+  <%=f.label "Body" %>
+  <%=f.text_field :body %>
+  <br>
+  <br>
+  <%=f.submit "Submit" %>
+<% end %>

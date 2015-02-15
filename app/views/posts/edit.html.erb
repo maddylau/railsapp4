@@ -1,0 +1,8 @@
+<h1>Edit Post </h1>
+<%= form_for @post, url: {action:"update"} do |f| %>
+  <%= f.label :headline %>
+  <%= f.text_field :headline %>
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+  <%= f.submit "Update Post" %>
+  <% end %>
