@@ -1,0 +1,9 @@
+<h1>Posts by <%= @user.name %></h1>
+
+<% @post.each do |post| %>
+<br>
+  <%= post.headline %>
+<br>
+  <%= post.body %>
+<br>
+<% end %>

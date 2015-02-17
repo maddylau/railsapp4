@@ -1,12 +1,11 @@
+<%= link_to 'SIGN UP', new_user_path %>
+<%= link_to 'LOGIN', login_path %>
 <h1>Posts</h1>
-
 <body>
   <% @posts.each do |post| %>
     <h3><%= link_to post.headline, post_path(post)  %></h3>
     <p><%= post.body %></p>
   <% end %>
   <br>
-  <br>
-  <br>
-  <%= link_to 'Create a new post', new_post_path %>
+  <b><%= link_to 'CREATE A NEW POST', new_post_path %></b>
 </body>

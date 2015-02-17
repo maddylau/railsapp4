@@ -2,6 +2,8 @@
 <%= @post.body %>
 <br>
 <br>
+<p>Posted by <%= link_to @post.user_id, user_path(@post.user_id) %></p>
+<br>
 <%= link_to 'Edit post', edit_post_path %>
 <br>
 <%= link_to 'Delete post', post_path, method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>

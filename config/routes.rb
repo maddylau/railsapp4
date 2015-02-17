@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   get '/' => 'home#index'
   resources :users
   resources :posts
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/loggedout' => 'sessions#destroy', as: :loggedout
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

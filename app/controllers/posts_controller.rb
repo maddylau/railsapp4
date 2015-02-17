@@ -4,7 +4,6 @@ class PostsController < ApplicationController
   end
 
   def show
-    # binding.pry
     @post = Post.find_by_id(params[:id])
   end
 
@@ -37,7 +36,6 @@ class PostsController < ApplicationController
     flash[:notice] = "Student was destroyed"
     redirect_to :posts
   end
-
 
   private
     def post_params
